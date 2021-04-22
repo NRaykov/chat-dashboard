@@ -8,7 +8,7 @@
       </a>
     </div>
     <div v-for="item in getSidebarItems" :key="item.id"
-         class="nav-item-parent"
+        class="nav-item-panel"
     >
       <sidebar-item :nav-item="item" />
     </div>
