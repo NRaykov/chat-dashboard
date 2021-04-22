@@ -1,19 +1,15 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../components/pages/Home.vue';
+import Dashboard from '../components/pages/Dashboard.vue';
+import SidebarRouteNames from '../enums/sidebarRouteNames';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../components/pages/About.vue'),
+    name: SidebarRouteNames.DASHBOARD,
+    component: Dashboard,
   },
 ];
 

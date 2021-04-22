@@ -3,8 +3,15 @@ import axios from 'axios';
  * Global HTTP requests service.
  * We can replace Axios with another library if needed"
  */
-const httpGET = (url) => {
-   return axios.get(url);
-}
+const http = {
+  get: (url) => axios.get(url),
+};
 
-export { httpGET }
+/**
+ * A frozen object can no longer be changed;
+ * freezing an object prevents new properties from being added to it,
+ * existing properties from being removed
+ */
+Object.freeze(http);
+
+export default http;
