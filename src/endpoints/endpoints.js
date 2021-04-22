@@ -1,5 +1,5 @@
 const endpoints = {
-  navigation: `${process.env.VUE_APP_API}/api/navigation.json`,
+  navigation: `${process.env.VUE_APP_API}navigation.json`,
 };
 
 /**

@@ -11,8 +11,11 @@ const sidebarModule = {
   },
   actions: {
     fetchSidebar({ commit }) {
-      return http.get(endpoints.navigation).then(() => {
-        commit('setSidebarItems');
+      return http.get(endpoints.navigation).then((response) => {
+        if (!response) {
+          return;
+        }
+        commit('setSidebarItems', response.data.navigations.sidebar);
       });
     },
   },

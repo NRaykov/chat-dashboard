@@ -1,7 +1,61 @@
 .sidebar-panel {
-  width: 30.5rem;
+  width: 25.5rem;
   height: 100%;
   position: fixed;
   left: 0;
   background-color: $secondary-bg-color;
+  padding-left: 3rem;
+  .nav-item-parent {
+    padding: 0 2.5rem;
+    margin: 2rem 0;
+    &:hover {
+      background-color: $main-bg-color;
+      border-top-left-radius: 3.5rem;
+      border-bottom-left-radius: 3.5rem;
+      .nav-item {
+        color: $secondary-text-color;
+        font-weight: 600;
+        .v-icon {
+          color: $secondary-text-color;
+        }
+      }
+    }
+  }
+  .nav-item-parent:nth-last-child(2) {
+    margin-top: 25rem;
+    @media (max-height: 990px) {
+      margin-top: 15rem;
+    }
+    .nav-item {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        height: 1px;
+        width: 80%;
+        background-color: white;
+      }
+    }
+  }
+  .nav-item {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 2rem 2rem 2rem 0;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+  }
+  .v-icon {
+    margin-right: 1.2rem;
+  }
+  .logo-panel {
+    padding-left: 2rem;
+    margin-top: 2.5rem;
+    .logo {
+      max-width: 100%;
+      width: auto;
+    }
+  }
 }

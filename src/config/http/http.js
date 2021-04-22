@@ -4,7 +4,7 @@ import axios from 'axios';
  * We can replace Axios with another library if needed"
  */
 const http = {
-  get: (url) => axios.get(url),
+  get: (url) => axios.get(url, { baseURL: window.location.origin }),
 };
 
 /**

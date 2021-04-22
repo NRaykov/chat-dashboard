@@ -14,3 +14,19 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+  /**
+  * Overrides Vuetify CSS
+  **/
+
+  /* Globals */
+  html { font-size: 62.5%; }
+
+  /* Icons */
+  .theme--light {
+    .v-icon {
+      color: inherit;
+    }
+  }
+
+</style>
