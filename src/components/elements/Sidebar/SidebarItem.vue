@@ -4,7 +4,7 @@
       <v-icon>
         {{ `mdi-${navItem.icon}` }}
       </v-icon>
-      {{ navItem.title }}
+        {{ navItem.title }}
     </div>
   </router-link>
 </template>

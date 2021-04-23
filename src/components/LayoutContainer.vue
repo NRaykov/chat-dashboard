@@ -1,6 +1,7 @@
 <template>
   <div class="container-layout">
     <sidebar />
+    <header-component />
     <transition
       name="fade"
       mode="out-in"
@@ -15,10 +16,12 @@
 
 <script>
 import Sidebar from './elements/Sidebar/SidebarContainer.vue';
+import HeaderComponent from './elements/Header/Header.vue';
 
 export default {
   components: {
     Sidebar,
+    HeaderComponent,
   },
   data() {
     return {

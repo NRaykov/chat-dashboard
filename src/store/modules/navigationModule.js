@@ -15,7 +15,7 @@ const sidebarModule = {
         if (!response) {
           return;
         }
-        commit('setSidebarItems', response.data.navigations.sidebar);
+        commit('setSidebarItems', response.data.sidebar);
       });
     },
   },

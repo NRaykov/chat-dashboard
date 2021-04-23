@@ -1,0 +1,54 @@
+  /**
+  * Overrides Vuetify CSS
+  **/
+  $box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.1);
+  $input-text-color: #a5a5a5;
+
+  /* Globals */
+  html { font-size: 62.5%; }
+
+  .theme--light {
+    /* Icons */
+    .v-icon {
+      color: inherit;
+    }
+
+    /* Forms */
+    .v-input__slot {
+      border-radius: 3rem;
+    }
+    .v-label {
+      font-size: 1.4rem;
+      padding: 0 1rem;
+    }
+
+    .v-text-field.v-text-field--solo:not(.v-text-field--solo-flat) > 
+    .v-input__control > .v-input__slot {
+      box-shadow: $box-shadow;
+    }
+
+    .v-text-field > .v-input__control > 
+    .v-input__slot > .v-text-field__slot {
+      padding: 0 1rem;
+      font-size: 1.4rem;
+      color: $input-text-color;
+    }
+
+    .search-input {
+      .v-input__icon--prepend-inner {
+        margin-left: 1rem;
+        color: $input-text-color;
+      }
+    }
+
+    .v-text-field.v-text-field--enclosed 
+    .v-text-field__details {
+      margin-bottom: 0;
+    }
+
+    .theme--light.v-breadcrumbs 
+    .v-breadcrumbs__divider, .theme--light.v-breadcrumbs 
+    .v-breadcrumbs__item--disabled {
+    color: rgba(0, 0, 0, 0.58);
+  }
+}
