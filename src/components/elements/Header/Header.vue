@@ -19,8 +19,50 @@
             ></v-text-field>
           </v-form>
         </v-col>
-        <v-col v-if="userData">
-          {{ userData.first_name }}
+        <v-col
+          v-if="userData"
+          cols="12"
+          md="5"
+          class="d-flex align-center justify-end"
+        >
+          <div class="icons-panel">
+            <div class="icon-item">
+              <v-icon>
+                mdi-bell-outline
+              </v-icon>
+              <span
+                v-if="userData.notify_count > 0"
+                class="counter"
+              >
+                {{ userData.notify_count }}
+              </span>
+            </div>
+            <div class="icon-item">
+              <v-icon>
+                mdi-email-outline
+              </v-icon>
+              <span
+                v-if="userData.messages_count > 0"
+                class="counter"
+              >
+                {{ userData.messages_count }}
+              </span>
+            </div>
+            <div class="icon-item">
+              <v-icon>
+                mdi-star-outline
+              </v-icon>
+              <span
+                v-if="userData.followers_count > 0"
+                class="counter"
+              >
+                {{ userData.followers_count }}
+              </span>
+            </div>
+          </div>
+          <div class="profile-pic-panel">
+            <img :src="userData.prof_pic" class="profile-pic" />
+          </div>
         </v-col>
       </v-row>
       <v-row class="mt-0">

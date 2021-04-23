@@ -12,6 +12,11 @@
     .v-icon {
       color: inherit;
     }
+    .icon-item {
+      .v-icon {
+        font-size: 2.8rem;
+      }
+    }
 
     /* Forms */
     .v-input__slot {

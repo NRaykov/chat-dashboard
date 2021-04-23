@@ -7,7 +7,7 @@
     "notify_count": 2,
     "messages_count": 0,
     "followers_count": 0,
-    "prof_pic": "placeholder",
+    "prof_pic": "../images/user_profile_photo.jpg",
 
     "auth": true
     }
