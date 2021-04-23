@@ -1,7 +1,16 @@
 <template>
   <div class="content">
     <v-container>
-      <h1>Dashboard</h1>
+      <direct-messages />
     </v-container>
   </div>
 </template>
+<script>
+import DirectMessages from '../../elements/DirectMessages/DirectMessages.vue';
+
+export default {
+  components: {
+    DirectMessages,
+  },
+};
+</script>

@@ -1,5 +1,6 @@
 {
   "main": {
-    "SearchFor": "Search for anything..."
+    "SearchFor": "Search for anything...",
+    "responses": "responses"
   }
 }

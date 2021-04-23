@@ -1,0 +1,46 @@
+{
+    "contacts": [
+        {
+            "id": 1231,
+            "name": "Pascal Doupod",
+            "imageUrl": "https://www.advancedengineering.se/wp-content/uploads/sites/61/2019/12/Guy_400x400-300x300.png",
+            "activities": [
+              {
+              "id": 141,
+              "userId": 1231,
+              "status": " commented on your status.",
+              "timestamp": "11:30 today",
+              "visible": true
+              },
+              {
+              "id": 531,
+              "userId": 1231,
+              "status": " commented on your status.",
+              "timestamp": "10:30 today",
+              "visible": true
+              }
+            ]
+          },
+        {
+          "id": 1235,
+          "name": "Miriam Grisham",
+          "imageUrl": "https://hedmancounseling.com/wp-content/uploads/2020/01/bio-portrait-placeholder-300x300.jpg",
+          "activities": [
+            {
+            "id": 20,
+            "userId": 1235,
+            "status": " commented on your status.",
+            "timestamp": "11:30 today",
+            "visible": true
+            },
+            {
+            "id": 30,
+            "userId": 1235,
+            "status": " commented on your status.",
+            "timestamp": "10:30 today",
+            "visible": true
+            }
+          ]  
+        }
+    ]
+}

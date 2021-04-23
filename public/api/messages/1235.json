@@ -1,0 +1,13 @@
+{
+    "participants": [
+        {
+            "id": 1235,
+            "name": "Miriam Grisham",
+            "imageUrl": "https://hedmancounseling.com/wp-content/uploads/2020/01/bio-portrait-placeholder-300x300.jpg",
+            "messages": [            
+                { "type": "text", "author": "me", "data": { "text": "HINT! v-slot:system-message-body doesn't work. Pull request with bugfix needed" } },
+                { "type": "text", "author": 1235, "data": { "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, semper euismod sagittis dapibus, pharetra suscipit justo. Phasellus vitae vulputate elit. Duis a odio lobortis, ullamcorper massa non, facilisis mauris. Donec posuere nisi sed sapien ornare, vel vulputate lorem porta. Mauris nisl mi, accumsan quis volutpat quis, blandit ac nisi." } }
+            ]
+        }
+    ]
+}
