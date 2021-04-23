@@ -1,7 +1,7 @@
 <template>
   <div class="container-layout">
     <sidebar />
-    <header-component />
+    <header-component :user-data="user" />
     <transition
       name="fade"
       mode="out-in"
@@ -19,6 +19,12 @@ import Sidebar from './elements/Sidebar/SidebarContainer.vue';
 import HeaderComponent from './elements/Header/Header.vue';
 
 export default {
+  props: {
+    user: {
+      type: Object,
+      default: () => {},
+    },
+  },
   components: {
     Sidebar,
     HeaderComponent,

@@ -19,8 +19,11 @@
             ></v-text-field>
           </v-form>
         </v-col>
+        <v-col v-if="userData">
+          {{ userData.first_name }}
+        </v-col>
       </v-row>
-      <v-row>
+      <v-row class="mt-0">
         <v-breadcrumbs
           :items="crumbs"
           divider=">"
@@ -32,6 +35,12 @@
 
 <script>
 export default {
+  props: {
+    userData: {
+      type: Object,
+      default: () => {},
+    },
+  },
   components: {},
   data() {
     return {

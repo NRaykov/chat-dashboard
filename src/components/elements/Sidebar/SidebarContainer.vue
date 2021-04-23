@@ -10,7 +10,9 @@
     <div v-for="item in getSidebarItems" :key="item.id"
         class="nav-item-panel"
     >
-      <sidebar-item :nav-item="item" />
+      <template v-if="item">
+        <sidebar-item :nav-item="item" />
+      </template>
     </div>
   </div>
 </template>

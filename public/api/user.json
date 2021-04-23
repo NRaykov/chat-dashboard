@@ -1,0 +1,14 @@
+{
+  "user": {
+    "id": 1556,
+    "first_name": "Adam",
+    "last_name": "Springfiled",
+    "email": "adam@example.com",
+    "notify_count": 2,
+    "messages_count": 0,
+    "followers_count": 0,
+    "prof_pic": "placeholder",
+
+    "auth": true
+    }
+}

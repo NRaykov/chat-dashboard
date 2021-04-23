@@ -11,10 +11,7 @@
 <script>
 export default {
   props: {
-    navItem: {
-      type: Object,
-      default: () => {},
-    },
+    navItem: {},
   },
   data() {
     return {};

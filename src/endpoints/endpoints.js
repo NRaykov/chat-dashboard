@@ -1,4 +1,5 @@
 const endpoints = {
+  user: `${process.env.VUE_APP_API}user.json`,
   navigation: `${process.env.VUE_APP_API}navigation.json`,
 };
 
