@@ -1,10 +1,35 @@
 /** Messages **/
+.profile-pic {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.3rem;
+}
+
+.activites-panel {
+  border-top: 1px solid white;
+}
+
+.responses {
+  font-size: 1.3rem;
+  color: #a1a1a1;
+}
+
 .sc-launcher {
   display: none;
 }
 .info-panel {
+  display: flex;
+  align-items: center;
   color: $main-text-color;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1.5rem;
   cursor: pointer;
   .icon-message {
     margin-right: 2rem;
@@ -13,6 +38,8 @@
   .info-inner {
     display: flex;
     align-items: center;
+    width: 100%;
+    padding-left: 1.5rem;
   }
 }
 .timestamp {

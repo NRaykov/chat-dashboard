@@ -23,7 +23,7 @@
           v-if="userData"
           cols="12"
           md="5"
-          class="d-flex align-center justify-end"
+          class="d-flex align-center justify-end flex-wrap"
         >
           <div class="icons-panel">
             <div class="icon-item">

@@ -20,6 +20,10 @@ body {
   padding-right: 10.5rem;
 }
 
+.border-green {
+  border: 0.3rem solid #5ddb6a;
+}
+
 .d-none {
   display: none!important;
 }
@@ -39,20 +43,23 @@ body {
 }
 
 /** Scrollbar **/
-body::-webkit-scrollbar-track
+body::-webkit-scrollbar-track,
+.sc-message-list::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: none;
 	border-radius: 1.5rem;
 	background-color: $main-bg-color;
 }
 
-body::-webkit-scrollbar
+body::-webkit-scrollbar,
+.sc-message-list::-webkit-scrollbar
 {
 	width: 0.7rem;
 	background-color: $main-bg-color;
 }
 
-body::-webkit-scrollbar-thumb
+body::-webkit-scrollbar-thumb,
+.sc-message-list::-webkit-scrollbar-thumb
 {
 	border-radius: 1.5rem;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);

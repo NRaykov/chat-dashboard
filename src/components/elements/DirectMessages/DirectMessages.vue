@@ -1,17 +1,17 @@
 <template>
   <div>
     <v-row>
-      <v-col lg="6">
+      <v-col lg="4">
         <div
           v-if="getUserContacts"
-          class="card contacts"
+          class="card activites-panel"
         >
           <div
             v-for="(contact, index) in getUserContacts"
             :key="index"
           >
           <div v-for="(activity, index) in contact.activities" :key="index"
-              class="d-flex align-center info-panel">
+              class="info-panel">
               <div
                 class="info-inner"
                 @click="toggleVisibility(activity)"
@@ -31,18 +31,26 @@
               >
                 <img
                   :src="contact.imageUrl"
-                  width="36"
-                  height="36"
-                  class="rounded-circle mr-2"
+                  width="40"
+                  height="40"
+                  class="rounded-circle border-green mr-2"
                   alt=""
                 />
-                <span>{{ contact.name }}</span>
+                <div class="d-flex flex-column">
+                  <span>
+                    <strong class="mr-2">{{ contact.name }}</strong>
+                    <span class="responses">
+                      {{ activity.meta.responses }} {{ $t("main.responses") }}
+                    </span>
+                  </span>
+                  <span>{{ activity.meta.current_message }}</span>
+                </div>
               </div>
           </div>
           </div>
         </div>
       </v-col>
-      <v-col lg="6">
+      <v-col lg="8">
         <div
           v-if="messagesLoaded"
           class="card"
