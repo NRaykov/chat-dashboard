@@ -44,7 +44,8 @@ body {
 
 /** Scrollbar **/
 body::-webkit-scrollbar-track,
-.sc-message-list::-webkit-scrollbar-track
+.sc-message-list::-webkit-scrollbar-track,
+.activites-panel::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: none;
 	border-radius: 1.5rem;
@@ -52,15 +53,17 @@ body::-webkit-scrollbar-track,
 }
 
 body::-webkit-scrollbar,
-.sc-message-list::-webkit-scrollbar
+.sc-message-list::-webkit-scrollbar,
+.activites-panel::-webkit-scrollbar
 {
-	width: 0.7rem;
+	width: 0.5rem;
 	background-color: $main-bg-color;
 }
 
 body::-webkit-scrollbar-thumb,
-.sc-message-list::-webkit-scrollbar-thumb
-{
+.sc-message-list::-webkit-scrollbar-thumb,
+.activites-panel::-webkit-scrollbar-thumb
+ {
 	border-radius: 1.5rem;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: $scrollbar-color;

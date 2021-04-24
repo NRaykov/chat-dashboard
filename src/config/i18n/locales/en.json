@@ -1,6 +1,9 @@
 {
   "main": {
     "SearchFor": "Search for anything...",
-    "responses": "responses"
+    "responses": "responses",
+    "message": "New message",
+    "send": "Send",
+    "sendMessage": "Send Message"
   }
 }

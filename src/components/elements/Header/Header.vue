@@ -71,11 +71,19 @@
           divider=">"
         ></v-breadcrumbs>
       </v-row>
+      <template
+        v-if="$route.name === 'dashboard'"
+      >
+        <filter-component />
+      </template>
+
     </v-container>
   </div>
 </template>
 
 <script>
+import FilterComponent from '../Filter/Filter.vue';
+
 export default {
   props: {
     userData: {
@@ -83,7 +91,9 @@ export default {
       default: () => {},
     },
   },
-  components: {},
+  components: {
+    FilterComponent,
+  },
   data() {
     return {
       search: '',

@@ -6,7 +6,7 @@ const messagesModule = {
   state: {
     participants: [],
     loaded: false,
-    contacts: [],
+    feed: [],
   },
   actions: {
     async getMessages({ commit }, id) {
@@ -15,15 +15,13 @@ const messagesModule = {
           commit('loadedMessages', true);
           commit('setParticipants', messages.data.participants);
         }
-
         return messages;
       });
     },
-    async getContacts({ commit }) {
-      return http.get(endpoints.getUserContacts).then((response) => {
-        console.log(response);
+    async getFeed({ commit }) {
+      return http.get(endpoints.getUserFeed).then((response) => {
         if (response.data) {
-          commit('setUserContacts', response.data.contacts);
+          commit('setUserFeed', response.data.feed);
         }
         return response;
       });
@@ -31,16 +29,22 @@ const messagesModule = {
     clearParticipants({ commit }) {
       commit('clearParticipants');
     },
+    clearFeed({ commit }) {
+      commit('clearParticipants');
+    },
   },
   mutations: {
     setParticipants(state, data) {
       state.participants = data;
     },
-    setUserContacts(state, contacts) {
-      state.contacts = contacts;
+    setUserFeed(state, feed) {
+      state.feed = feed;
     },
     clearParticipants(state) {
       state.participants = [];
+    },
+    clearFeed(state) {
+      state.feed = [];
     },
     loadedMessages(state, status) {
       state.loaded = status;
@@ -48,7 +52,7 @@ const messagesModule = {
   },
   getters: {
     getParticipants: (state) => state.participants,
-    getUserContacts: (state) => state.contacts,
+    getUserFeed: (state) => state.feed,
     messagesLoaded: (state) => state.loaded,
   },
 };

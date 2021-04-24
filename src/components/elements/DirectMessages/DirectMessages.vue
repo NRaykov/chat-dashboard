@@ -3,50 +3,49 @@
     <v-row>
       <v-col lg="4">
         <div
-          v-if="getUserContacts"
+          v-if="getUserFeed"
           class="card activites-panel"
         >
           <div
-            v-for="(contact, index) in getUserContacts"
+            v-for="(activity, index) in getUserFeed"
             :key="index"
           >
-          <div v-for="(activity, index) in contact.activities" :key="index"
-              class="info-panel">
-              <div
-                class="info-inner"
-                @click="toggleVisibility(activity)"
-                v-if="activity.visible"
-              >
-                  <img class="icon-message" height="30" width="30" :src="'https://i.ibb.co/LQs8BMz/msg.png'" />
-                  <span class="pt-2">
-                    <strong>{{ contact.name }}</strong>
-                      {{ activity.status }}
-                      <span class="timestamp">{{ activity.timestamp }}</span>
-                  </span>
-              </div>
-              <div
-                class="contacts-item"
-                @click="toggleVisibility(activity)"
-                v-if="!activity.visible"
-              >
-                <img
-                  :src="contact.imageUrl"
-                  width="40"
-                  height="40"
-                  class="rounded-circle border-green mr-2"
-                  alt=""
-                />
-                <div class="d-flex flex-column">
-                  <span>
-                    <strong class="mr-2">{{ contact.name }}</strong>
-                    <span class="responses">
-                      {{ activity.meta.responses }} {{ $t("main.responses") }}
+            <div class="info-panel">
+                <div
+                  class="info-inner"
+                  @click="toggleVisibility(activity)"
+                  v-if="activity.visible"
+                >
+                    <img class="icon-message" height="30" width="30" :src="'https://i.ibb.co/LQs8BMz/msg.png'" />
+                    <span class="pt-2">
+                      <strong>{{ activity.name }}</strong>
+                        {{ activity.status }}
+                        <span class="timestamp">{{ activity.timestamp }}</span>
                     </span>
-                  </span>
-                  <span>{{ activity.meta.current_message }}</span>
                 </div>
-              </div>
-          </div>
+                <div
+                  class="contacts-item"
+                  @click="toggleVisibility(activity)"
+                  v-if="!activity.visible"
+                >
+                  <img
+                    :src="activity.imageUrl"
+                    width="40"
+                    height="40"
+                    class="rounded-circle border-green mr-2"
+                    alt=""
+                  />
+                  <div class="d-flex flex-column">
+                    <span>
+                      <strong class="mr-2">{{ activity.name }}</strong>
+                      <span class="responses">
+                        {{ activity.meta.responses }} {{ $t("main.responses") }}
+                      </span>
+                    </span>
+                    <span>{{ activity.meta.current_message }}</span>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </v-col>
@@ -79,17 +78,17 @@ export default {
   },
   computed: {
     ...mapGetters('messagesModule', ['getParticipants']),
-    ...mapGetters('messagesModule', ['getUserContacts']),
+    ...mapGetters('messagesModule', ['getUserFeed']),
     ...mapGetters('messagesModule', ['messagesLoaded']),
   },
   mounted() {
-    this.getContacts();
+    this.getFeed();
     this.getMessages(1231);
   },
   methods: {
     ...mapActions('messagesModule', ['getMessages']),
     ...mapActions('messagesModule', ['clearParticipants']),
-    ...mapActions('messagesModule', ['getContacts']),
+    ...mapActions('messagesModule', ['getFeed']),
 
     toggleVisibility(item) {
       const activity = item;
