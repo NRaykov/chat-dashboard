@@ -1,7 +1,7 @@
 const endpoints = {
   user: `${process.env.VUE_APP_API}user.json`,
   navigation: `${process.env.VUE_APP_API}navigation.json`,
-  getUserContacts: `${process.env.VUE_APP_API}messages/contacts.json`,
+  getUserFeed: `${process.env.VUE_APP_API}messages/feed.json`,
   getMessages(id) {
     return `${process.env.VUE_APP_API}messages/${id}.json`;
   },
