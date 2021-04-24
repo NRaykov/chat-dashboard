@@ -1,0 +1,13 @@
+{
+    "participants": [
+        {
+            "id": 1231,
+            "name": "Pascal Doupod",
+            "imageUrl": "https://www.advancedengineering.se/wp-content/uploads/sites/61/2019/12/Guy_400x400-300x300.png",
+            "messages": [            
+                { "type": "text", "author": "me", "data": { "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, semper euismod sagittis dapibus, pharetra suscipit justo. Phasellus vitae vulputate elit. Duis a odio lobortis, ullamcorper massa non, facilisis mauris. Donec posuere nisi sed sapien ornare, vel vulputate lorem porta. Mauris nisl mi, accumsan quis volutpat quis, blandit ac nisi." } },
+                { "type": "text", "author": 1231, "data": { "text": "Lorem ipsum dolor sit amet, consectetur adipisc" } }
+            ]
+        }
+    ]
+}

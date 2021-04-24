@@ -1,48 +1,46 @@
 {
-  "data": {
-    "sidebar": [
-      {
-        "id": 456,
-        "name": "dashboard",
-        "icon": "home",
-        "title": "Dashboard"
-      },
-      {
-        "id": 457,
-        "name": "tasks",
-        "icon": "check-circle-outline",
-        "title": "My Tasks"
-      },
-      {
-        "id": 458,
-        "name": "projects",
-        "icon": "file-outline",
-        "title": "My Projects"
-      },
-      {
-        "id": 459,
-        "name": "people",
-        "icon": "account-multiple",
-        "title": "People"
-      },
-      {
-        "id": 460,
-        "name": "statistics",
-        "icon": "chart-arc",
-        "title": "Statistics"
-      },
-            {
-        "id": 461,
-        "name": "help",
-        "icon": "help-circle-outline",
-        "title": "Help"
-      },
-      {
-        "id": 462,
-        "name": "settings",
-        "icon": "cog-outline",
-        "title": "Settings"
-      }
-    ]
-  }
+  "sidebar": [
+    {
+      "id": 456,
+      "name": "dashboard",
+      "icon": "home",
+      "title": "Dashboard"
+    },
+    {
+      "id": 457,
+      "name": "tasks",
+      "icon": "check-circle-outline",
+      "title": "My Tasks"
+    },
+    {
+      "id": 458,
+      "name": "projects",
+      "icon": "file-outline",
+      "title": "My Projects"
+    },
+    {
+      "id": 459,
+      "name": "people",
+      "icon": "account-multiple",
+      "title": "People"
+    },
+    {
+      "id": 460,
+      "name": "statistics",
+      "icon": "chart-arc",
+      "title": "Statistics"
+    },
+          {
+      "id": 461,
+      "name": "help",
+      "icon": "help-circle-outline",
+      "title": "Help"
+    },
+    {
+      "id": 462,
+      "name": "settings",
+      "icon": "cog-outline",
+      "title": "Settings"
+    }
+  ]
 }
