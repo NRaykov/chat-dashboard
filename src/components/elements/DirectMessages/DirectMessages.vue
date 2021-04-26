@@ -16,12 +16,12 @@
                   @click="toggleVisibility(activity)"
                   v-if="activity.visible"
                 >
-                    <img class="icon-message" height="30" width="30" :src="'https://i.ibb.co/LQs8BMz/msg.png'" />
-                    <span class="pt-2">
-                      <strong>{{ activity.name }}</strong>
-                        {{ activity.status }}
-                        <span class="timestamp">{{ activity.timestamp }}</span>
-                    </span>
+                  <img class="icon-message" height="30" width="30" :src="'https://i.ibb.co/LQs8BMz/msg.png'" />
+                  <span class="pt-2">
+                    <strong>{{ activity.name }}</strong>
+                      {{ activity.status }}
+                      <span class="timestamp">{{ activity.timestamp }}</span>
+                  </span>
                 </div>
                 <div
                   class="contacts-item"
@@ -82,20 +82,20 @@ export default {
     ...mapGetters('messagesModule', ['messagesLoaded']),
   },
   mounted() {
-    this.getFeed();
-    this.getMessages(1231);
+    this.fetchFeed();
+    this.fetchMessages(1231);
   },
   methods: {
-    ...mapActions('messagesModule', ['getMessages']),
+    ...mapActions('messagesModule', ['fetchMessages']),
     ...mapActions('messagesModule', ['clearParticipants']),
-    ...mapActions('messagesModule', ['getFeed']),
+    ...mapActions('messagesModule', ['fetchFeed']),
 
     toggleVisibility(item) {
       const activity = item;
       activity.visible = !activity.visible;
       if (!activity.visible) {
         this.clearParticipants();
-        this.getMessages(activity.userId);
+        this.fetchMessages(activity.userId);
       }
     },
   },

@@ -3,6 +3,7 @@
   **/
   $box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.1);
   $input-text-color: #a5a5a5;
+  $message-btn-color: #ff8a47;
 
   /* Globals */
   html { font-size: 62.5%; }
@@ -60,7 +61,7 @@
     .v-btn__content {
       font-size: 1.4rem;
       text-transform: none;
-      background-color: #ff8a47;
+      background-color: $message-btn-color;
       .v-icon {
         font-size: 2rem;
       }
@@ -68,9 +69,15 @@
   }
 }
 
-.v-list-item__title {
-  font-size: 1.4rem;
+.v-list-item {
+  .v-list-item__content {
+    .v-list-item__title {
+      font-size: 1.4rem;
+    }
+  } 
 }
+
+
 
 /*** Forms ***/
 .v-btn.v-size--default {

@@ -11,7 +11,7 @@ const UserModel = {
   followers_count: 0,
   prof_pic: 'placeholder',
 
-  auth: 'fasle',
+  auth: 'false',
 };
 
 /**

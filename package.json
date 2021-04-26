@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "core-js": "^3.6.5",
+    "core-js": "^3.11.0",
     "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vue-beautiful-chat": "^2.5.0",

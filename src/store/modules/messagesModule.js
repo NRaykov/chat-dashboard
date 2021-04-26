@@ -9,7 +9,7 @@ const messagesModule = {
     feed: [],
   },
   actions: {
-    async getMessages({ commit }, id) {
+    fetchMessages({ commit }, id) {
       return http.get(endpoints.getMessages(id)).then((messages) => {
         if (messages.data.participants) {
           commit('loadedMessages', true);
@@ -18,7 +18,7 @@ const messagesModule = {
         return messages;
       });
     },
-    async getFeed({ commit }) {
+    fetchFeed({ commit }) {
       return http.get(endpoints.getUserFeed).then((response) => {
         if (response.data) {
           commit('setUserFeed', response.data.feed);
